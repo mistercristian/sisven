@@ -81,5 +81,11 @@ class CategorieController extends Controller
     public function destroy(string $id)
     {
         //
+
+        $categoria = Categorie::find($id);
+        $categoria->delete();
+
+        // Redirigir a la lista de categorías
+        return redirect()->route('categorias.index');
     }
 }
