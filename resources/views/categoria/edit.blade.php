@@ -8,7 +8,7 @@
 
     <div class="container">
       <br>
-      <form method="POST" action="{{route('categorias.update',['categorias'=>$categorias->id])}}">
+      <form method="POST" action="{{route('categorias.update',['categoria'=>$categoria->id])}}">
           @method('put')
           @csrf
           <div class="mb-3">

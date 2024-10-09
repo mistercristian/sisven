@@ -56,8 +56,8 @@ class CategorieController extends Controller
     public function edit(string $id)
     {
         //
-        $categorias = Categorie::find($id);
-        return view('categoria.edit', ['categorias' => $categorias]);
+        $categoria = Categorie::find($id);
+        return view('categoria.edit', ['categoria' => $categoria]);
     }
 
     /**
